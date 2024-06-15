@@ -1,0 +1,26 @@
+import React from "react";
+
+const Course = () => {
+  return (
+    <>
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
+        <div className="mt-28 items-center justify-center text-center">
+          <h1 className="text-2xl font-semibold md:text-4xl">
+            We're delighted to have you{" "}
+            <span className="text-green-600">Here! :)</span>{" "}
+          </h1>
+          <p className="mt-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            expedita eius deleniti? Fugit ea alias adipisci natus veniam. Dolor
+            eius consectetur aut molestiae laudantium accusantium exercitationem
+            iure soluta, quaerat iusto? Neque, illum ad eos doloremque porro
+            aspernatur eius explicabo commodi quas, tenetur facere ipsa!
+            Exercitationem molestias corporis illo laboriosam harum.
+          </p>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Course;
