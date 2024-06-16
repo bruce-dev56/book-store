@@ -20,7 +20,7 @@
         "name": "Mystery Novel",
         "title": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
         "price": 0,
-        "category": "Mystery",
+        "categoryScience Fiction": "Mystery",
         "image": "https://img.freepik.com/premium-vector/stack-books_119631-472.jpg"
     },
     {
@@ -36,7 +36,7 @@
         "name": "Sci-Fi Adventure",
         "title": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain.",
         "price": 14.99,
-        "category": "Science Fiction",
+        "category": "ScienceFiction",
         "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
     },
     {

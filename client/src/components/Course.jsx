@@ -1,4 +1,6 @@
 import React from "react";
+import Cards from "./Cards";
+import list from "../../public/list.json";
 
 const Course = () => {
   return (
@@ -17,6 +19,14 @@ const Course = () => {
             aspernatur eius explicabo commodi quas, tenetur facere ipsa!
             Exercitationem molestias corporis illo laboriosam harum.
           </p>
+          <button className="btn btn-outline btn-accent hover:text-white mt-6">
+            Back
+          </button>
+        </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-4 ">
+          {list.map((item) => (
+            <Cards key={item.id} item={item} />
+          ))}
         </div>
       </div>
     </>
