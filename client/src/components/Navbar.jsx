@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
-
-  // handle NavBar styling 
+  // handle NavBar styling
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -22,16 +21,24 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a href="/">Home</a>
+        <Link to="/">
+          <a>Home</a>
+        </Link>
       </li>
       <li>
-        <a href="/Course">Course</a>
+        <Link to="/course">
+          <a>Course</a>
+        </Link>
       </li>
       <li>
-        <a>Contact</a>
+        <Link to="/contact">
+          <a>Contact</a>
+        </Link>
       </li>
       <li>
-        <a>About</a>
+        <Link to="/about">
+          <a>About</a>
+        </Link>
       </li>
     </>
   );
