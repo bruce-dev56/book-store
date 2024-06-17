@@ -16,7 +16,7 @@ const Navbar = () => {
       localStorage.setItem("theme", "light");
       document.body.classList.remove("dark");
     }
-  }, [theme]);
+  }, [theme]); 
 
   // handle NavBar styling
   const [sticky, setSticky] = useState(false);
@@ -62,7 +62,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`max-w-screen-2xl container mx-auto backdrop-blur-sm md:px-20 px-4 dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 ${
+        className={`max-w-screen-2xl container mx-auto backdrop-blur-sm md:px-20 px-4 shadow-md dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 ${
           sticky
             ? "sticky-navbar shadow-sm dark:text-white backdrop-blur-sm duration-300 transition-all ease-in-out"
             : " "
@@ -105,10 +105,10 @@ const Navbar = () => {
               <ul className="menu menu-horizontal px-1">{navItems}</ul>
             </div>
             <div className="hidden md:block">
-              <label className="input input-bordered flex items-center gap-2">
+              <label className="py-3 px-2 border rounded-md flex items-center gap-2">
                 <input
                   type="text"
-                  className="grow outline-none"
+                  className="grow outline-none dark:bg-slate-900 dark:text-white"
                   placeholder="Search"
                 />
                 <svg
