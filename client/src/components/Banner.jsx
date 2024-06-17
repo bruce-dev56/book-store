@@ -16,7 +16,7 @@ const Banner = () => {
               et totam. Tempora amet atque expedita, quae corrupti totam sed
               pariatur corporis at veniam est voluptas animi!
             </p>
-            <label className="input input-bordered flex items-center gap-2 dark:border-white dark:bg-slate-900 dark:text-white">
+            <label className="input input-bordered flex items-center gap-2 dark:border-slate-700 dark:bg-slate-900">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"

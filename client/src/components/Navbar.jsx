@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Login from "./Login";
 
 const Navbar = () => {
   // Dark and Light Mode Function Implement
@@ -105,10 +106,10 @@ const Navbar = () => {
               <ul className="menu menu-horizontal px-1">{navItems}</ul>
             </div>
             <div className="hidden md:block">
-              <label className="py-3 px-2 border rounded-md flex items-center gap-2">
+              <label className="py-3 px-2 border rounded-md flex items-center gap-2 dark:border-slate-700">
                 <input
                   type="text"
-                  className="grow outline-none dark:bg-slate-900 dark:text-white"
+                  className="grow outline-none bg-transparent dark:bg-slate-900 dark:text-white "
                   placeholder="Search"
                 />
                 <svg
@@ -154,9 +155,10 @@ const Navbar = () => {
               </svg>
             </label>
             <div className="">
-              <a className="btn px-4 hover:bg-slate-800 duration-300 cursor-pointer">
+              <a className="btn px-4 hover:bg-black-100 duration-300 cursor-pointer" onClick={()=>document.getElementById('my_modal_3').showModal()}>
                 Login
               </a>
+              <Login/>
             </div>
           </div>
         </div>
