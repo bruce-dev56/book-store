@@ -37,22 +37,22 @@ const Navbar = () => {
 
   const navItems = (
     <>
-      <li>
+      <li className="dark:hover:bg-slate-800">
         <Link to="/">
           <a>Home</a>
         </Link>
       </li>
-      <li>
+      <li className="dark:hover:bg-slate-800">
         <Link to="/course">
           <a>Course</a>
         </Link>
       </li>
-      <li>
+      <li className="dark:hover:bg-slate-800">
         <Link to="/contact">
           <a>Contact</a>
         </Link>
       </li>
-      <li>
+      <li className="dark:hover:bg-slate-800">
         <Link to="/about">
           <a>About</a>
         </Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 dark:bg-slate-900 dark:text-white"
               >
                 {navItems}
               </ul>
@@ -103,7 +103,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal px-1">{navItems}</ul>
+              <ul className="menu menu-horizontal px-1 dark:bg-slate-900 dark:text-white">{navItems}</ul>
             </div>
             <div className="hidden md:block">
               <label className="py-3 px-2 border rounded-md flex items-center gap-2 dark:border-slate-700">
