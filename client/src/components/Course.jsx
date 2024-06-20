@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 const Course = () => {
+  
+  //Fetching data from the database
   const [book, setBook] = useState([])
   useEffect(() => {
     const getBook = async () => {
