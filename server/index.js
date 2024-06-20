@@ -4,9 +4,14 @@ import mongoose from 'mongoose';
 import cors from 'cors'; 
 
 import bookRoute from "./route/book.route.js"
+import userRoute from "./route/user.route.js"
 
 const app = express()
 app.use(cors());
+
+//middleware
+app.use(express.json()); // Data sent from body will be passed in Json form
+
 dotenv.config();
 const PORT = process.env.PORT || 4000
 const URI = process.env.MongoDBURI;
@@ -25,6 +30,8 @@ try {
 
 // defining routes
 app.use("/book",bookRoute)
+app.use("/user",userRoute) // for the signup page
+
 
 
 
