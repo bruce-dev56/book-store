@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import signup from './Signup'
 import { useForm } from "react-hook-form"
 import axios from "axios";
+import toast from 'react-hot-toast';
 
 
 const Login = () => {
@@ -27,14 +28,14 @@ const Login = () => {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          alert("Loggedin Successful");
+          toast.success('Loggedin Successful');
         }
-        // Signup data stored in the Browser local Storage
+        // Login data stored in the Browser local Storage
         localStorage.setItem("users", JSON.stringify(res.data.user));
       })
       .catch((err) => {
         if (err.response) {
-          alert("Error: " + err.response.data.message);
+          toast.error('Error: '+ err.response.data.message);
         }
       });
   }
@@ -42,7 +43,7 @@ const Login = () => {
 
   return (
     <div>
-      <dialog id="my_modal_3" className="modal  backdrop-blur-sm">
+      <dialog id="my_modal_3" className="modal">
         <div className="modal-box dark:bg-slate-900 dark:text-white">
           <form onSubmit={handleSubmit(onSubmit)} method="dialog"> 
             {/* if there is a button in form, it will close the modal */}

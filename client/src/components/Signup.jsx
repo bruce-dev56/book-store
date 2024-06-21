@@ -3,6 +3,7 @@ import { BrowserRouter, Link } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import toast from 'react-hot-toast';
 
 const Signup = () => {
   // react-hook-form Validation
@@ -28,14 +29,14 @@ const Signup = () => {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          alert("Signup Successful");
+          toast.success("Signup Successful");
         }
         // Signup data stored in the Browser local Storage
         localStorage.setItem("users", JSON.stringify(res.data.user));
       })
       .catch((err) => {
         if (err.response) {
-          alert("Error: " + err.response.data.message);
+          toast.error("Error: " + err.response.data.message);
         }
       });
   };
