@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import signup from './Signup'
 import { useForm } from "react-hook-form"
+import axios from "axios";
+
 
 const Login = () => {
   // react-hook-form Validation
@@ -10,7 +12,32 @@ const Login = () => {
     handleSubmit,
     formState: { errors },
   } = useForm()
-  const onSubmit = (data) => console.log(data)
+
+
+  const onSubmit = async (data) => {
+    const userinfo = {
+      email: data.email,
+      password: data.password,
+    };
+    // console.log(data);
+
+    // Data sent to the database
+    await axios
+      .post("http://localhost:4001/user/login", userinfo)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          alert("Loggedin Successful");
+        }
+        // Signup data stored in the Browser local Storage
+        localStorage.setItem("users", JSON.stringify(res.data.user));
+      })
+      .catch((err) => {
+        if (err.response) {
+          alert("Error: " + err.response.data.message);
+        }
+      });
+  }
 
 
   return (
