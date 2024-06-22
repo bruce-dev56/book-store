@@ -6,6 +6,7 @@ import Courses from "./courses/Courses";
 import Signup from './components/Signup'
 import { Toaster } from 'react-hot-toast';
 import { useAuth } from "./context/AuthProvider";
+import About from "./components/About";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/course" element={AuthUser ? <Courses /> : <Navigate to="/signup" />} />
         <Route path="/Signup" element={<Signup />} />
+        <Route path="/About" element={<About />} />
       </Routes>
       <Toaster />
     </>
