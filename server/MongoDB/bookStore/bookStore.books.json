@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b27"
+  },
+  "id": 1,
+  "name": "Story Book",
+  "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid.",
+  "price": 9.99,
+  "category": "Fiction",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+},
+{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b28"
+  },
+  "id": 2,
+  "name": "Adventure Tales",
+  "title": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.",
+  "price": 12.99,
+  "category": "Adventure",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+},
+{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b29"
+  },
+  "id": 3,
+  "name": "Mystery Novel",
+  "title": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+  "price": 0,
+  "categoryScience Fiction": "Mystery",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+},
+{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b2a"
+  },
+  "id": 4,
+  "name": "Fantasy Epic",
+  "title": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+  "price": 0,
+  "category": "free",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+},
+{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b2b"
+  },
+  "id": 5,
+  "name": "Sci-Fi Adventure",
+  "title": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain.",
+  "price": 14.99,
+  "category": "ScienceFiction",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+},
+{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b2c"
+  },
+  "id": 6,
+  "name": "Historical Fiction",
+  "title": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+  "price": 0,
+  "category": "free",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+},
+{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b2d"
+  },
+  "id": 7,
+  "name": "Horror Story",
+  "title": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore.",
+  "price": 0,
+  "category": "free",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+},
+{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b2e"
+  },
+  "id": 8,
+  "name": "Romantic Novel",
+  "title": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.",
+  "price": 8.99,
+  "category": "free",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+},
+{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b2f"
+  },
+  "id": 9,
+  "name": "Thriller",
+  "title": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+  "price": 0,
+  "category": "free",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+},
+{
+  "_id": {
+    "$oid": "6673e4b6c2baa019a6a28b30"
+  },
+  "id": 10,
+  "name": "Children's Book",
+  "title": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+  "price": 6.99,
+  "category": "Children",
+  "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg"
+}]
