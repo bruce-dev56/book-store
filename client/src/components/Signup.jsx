@@ -1,11 +1,17 @@
 import React from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import {Link, useLocation, useNavigate } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from 'react-hot-toast';
 
 const Signup = () => {
+
+  // Redirect to homepage after Signup
+  const location=useLocation()
+  const navigate=useNavigate()
+  const from = location.state?.from?.pathname || "/";
+
   // react-hook-form Validation
   const {
     register,
@@ -30,6 +36,7 @@ const Signup = () => {
         console.log(res.data);
         if (res.data) {
           toast.success("Signup Successful");
+          navigate(from , {replace:true}) // Redirect to homepage after Signup
         }
         // Signup data stored in the Browser local Storage
         localStorage.setItem("users", JSON.stringify(res.data.user));

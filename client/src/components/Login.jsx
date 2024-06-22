@@ -29,13 +29,19 @@ const Login = () => {
         console.log(res.data);
         if (res.data) {
           toast.success('Loggedin Successful');
+          document.getElementById("my_modal_3").close();
+          setTimeout(()=>{
+            window.location.reload();
+
+            // Login data stored in the Browser local Storage
+            localStorage.setItem("users", JSON.stringify(res.data.user));
+          },1000)
         }
-        // Login data stored in the Browser local Storage
-        localStorage.setItem("users", JSON.stringify(res.data.user));
       })
       .catch((err) => {
         if (err.response) {
           toast.error('Error: '+ err.response.data.message);
+          setTimeout(()=>{},2000)
         }
       });
   }
