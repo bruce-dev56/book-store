@@ -26,7 +26,7 @@ const Logout = () => {
   return (
     <div>
       <button
-        className="btn btn-outline border-green-500 hover:text-white hover:bg-red-500 hover:border-red-500 "
+        className="btn btn-outline border-green-500 hover:text-white hover:bg-red-500 hover:border-red-500 dark:text-white "
         onClick={handleLogout}
       >
         Logout
