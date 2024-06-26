@@ -1,7 +1,13 @@
 import React from "react";
+import toast from "react-hot-toast";
 
 const Cards = ({item}) => {
     console.log(item.image);
+
+    // Buy Now button
+    const buyNow = () => {
+      toast('Sorry, Book is coming soon 📖');
+    }
 
   return (
     <>
@@ -18,7 +24,7 @@ const Cards = ({item}) => {
             <p>{item.title}</p>
             <div className="card-actions justify-between">
               <div className="badge badge-outline">${item.price}</div>
-              <div className="badge badge-outline cursor-pointer hover:bg-blue-500 hover:border-blue-700 hover:text-white duration-300">Buy Now</div>
+              <div className="badge badge-outline cursor-pointer hover:bg-blue-500 hover:border-blue-700 hover:text-white duration-300" onClick={buyNow}>Buy Now</div>
             </div>
           </div>
         </div>

@@ -1,15 +1,14 @@
 import React from "react";
-import {Link, useLocation, useNavigate } from "react-router-dom";
-import Login from "./Login";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+// import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import toast from 'react-hot-toast';
+import toast from "react-hot-toast";
 
 const Signup = () => {
-
   // Redirect to homepage after Signup
-  const location=useLocation()
-  const navigate=useNavigate()
+  const location = useLocation();
+  const navigate = useNavigate();
   const from = location.state?.from?.pathname || "/";
 
   // react-hook-form Validation
@@ -36,7 +35,7 @@ const Signup = () => {
         console.log(res.data);
         if (res.data) {
           toast.success("Signup Successful");
-          navigate(from , {replace:true}) // Redirect to homepage after Signup
+          navigate(from, { replace: true }); // Redirect to homepage after Signup
         }
         // Signup data stored in the Browser local Storage
         localStorage.setItem("users", JSON.stringify(res.data.user));
@@ -123,16 +122,13 @@ const Signup = () => {
                   Signup
                 </button>
                 <p>
-                  Have account?
-                  <button
-                    className="underline text-blue-500 cursor-pointer"
-                    onClick={() =>
-                      document.getElementById("my_modal_3").showModal()
-                    }
-                  >
-                    Login
-                  </button>
-                  <Login />
+                  Have account?{" "}
+                  <Link to="/">
+                    <button className="underline text-blue-500 cursor-pointer">
+                      <span> Back Home</span>
+                    </button>{" "}
+                    and Login 
+                  </Link>
                 </p>
               </div>
             </form>
