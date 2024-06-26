@@ -73,10 +73,21 @@ npm run dev
 #### Course ####
 
 
-![Course](https://github.com/Satyajay01/BookStore-MERN/assets/121634007/47976f2f-a5f3-40e9-8950-e18ad8501fb0)
+![Course](https://github.com/Satyajay01/BookStore-MERN/assets/121634007/7598ab1f-8b5e-41a8-b16a-355c8bbd0e61)
+
 
 
 #### Contact ####
+
+
+#### Footer ####
+
+
+![footer](https://github.com/Satyajay01/BookStore-MERN/assets/121634007/52dc5eef-be1d-44fe-862a-061376d966c2)
+
+
+
+#### Footer ####
 
 
 ![Contact](https://github.com/Satyajay01/BookStore-MERN/assets/121634007/05b9e74b-6d23-4d40-8b6f-f7abcbdfea58)
